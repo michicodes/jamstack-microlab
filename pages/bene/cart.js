@@ -12,11 +12,11 @@ function Cart(){
     const articleItems = data.map(article => <ArticlePreviewCart title={article.title} desc={article.desc} price={article.price}/>)
 
     return (
-        <>
-            <h1>Checkout</h1>
+        <div>
+            <h1 className="text-3xl">Checkout</h1>
             <h3>Artikel</h3>
             <div>{articleItems}</div>
-        </>
+        </div>
     )
 }
 
