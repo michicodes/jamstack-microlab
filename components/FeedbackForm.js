@@ -4,7 +4,7 @@ import logo from '../public/supreme_senacor.png'
 const FeedbackForm = () => {
     return (<>
         <form className="w-full max-w-lg" name="Merch" method="POST" data-netlify="true">
-            <Image src={logo}/>
+            <Image src={logo} alt="Senacor" />
             <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full px-3">
                     <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="grid-password">
