@@ -14,7 +14,7 @@ export default function Home() {
             <Head>
                 <title>senacor.shop</title>
                 <link rel="icon" href="/favicon.ico"/>
-                <meta name="description">Senacor Shop</meta>
+                <meta name="description" content="Senacor Shop" />
             </Head>
 
             <main>
