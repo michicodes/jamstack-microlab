@@ -3,7 +3,7 @@ import logo from '../public/supreme_senacor.png'
 
 const FeedbackForm = () => {
     return (<>
-        <form className="w-full max-w-lg" netlify="true">
+        <form className="w-full max-w-lg" name="Merch" method="POST" data-netlify="true">
             <Image src={logo}/>
             <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full px-3">
