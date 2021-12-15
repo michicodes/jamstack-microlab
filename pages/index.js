@@ -10,7 +10,7 @@ import FeedbackForm from '@components/FeedbackForm'
 
 export default function Home() {
     return (
-        <div className="mx-auto flex justify-center items-center h-screen">
+        <Content>
             <Head>
                 <title>senacor.shop</title>
                 <link rel="icon" href="/favicon.ico"/>
@@ -22,6 +22,6 @@ export default function Home() {
                 <FeedbackForm/>
             </main>
             <Footer/>
-        </div>
+        </Content>
     )
 }
