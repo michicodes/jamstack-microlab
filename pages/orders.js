@@ -1,6 +1,7 @@
 import OrderPreview from "@components/OrderPreview";
-import {getData} from "../api/orders";
-import auth0 from "../../lib/auth0";
+import {getData} from "./api/orders";
+import auth0 from "../lib/auth0";
+import Content from "@components/Content";
 
 function Orders({ data, user }){
 
@@ -8,9 +9,11 @@ function Orders({ data, user }){
 
     return (
         <>
-            <h1>Orders</h1>
-            <h3>Your latest Orders {user.name}</h3>
-            <div>{orderItems}</div>
+            <Content>
+                <h1>Orders</h1>
+                <h3>Your latest Orders {user.name}</h3>
+                <div>{orderItems}</div>
+            </Content>
         </>
     )
 }
