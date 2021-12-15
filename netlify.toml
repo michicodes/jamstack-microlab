@@ -1,7 +1,6 @@
 [build]
   command = "npm run build"
   publish = ".next"
-  edge_handlers = "src/edge-handlers"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
