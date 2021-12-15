@@ -15,6 +15,7 @@ export default function Home() {
                 <title>senacor.shop</title>
                 <link rel="icon" href="/favicon.ico"/>
                 <meta name="description" content="Senacor Shop" />
+                <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
             </Head>
 
             <main>
