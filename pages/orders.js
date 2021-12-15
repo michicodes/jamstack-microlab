@@ -5,7 +5,7 @@ import Content from "@components/Content";
 
 function Orders({ data, user }){
 
-    const orderItems = data.map(order => <OrderPreview id={order.id} date={order.date} articles={order.articles}/>)
+    const orderItems = data.map((order, i) => <OrderPreview key={i} id={order.id} date={order.date} articles={order.articles}/>)
 
     return (
         <>

@@ -1,7 +1,7 @@
 
 export default function OrderPreview({ id, date, articles }){
 
-    const articleItems = articles.map(article => <li key={id}>{article}</li>)
+    const articleItems = articles.map((article,i) => <li key={i}>{article}</li>)
 
     return (
         <>
