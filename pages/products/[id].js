@@ -21,10 +21,10 @@ export default function Product({productData}) {
 }
 
 export async function getStaticPaths() {
-    const paths = []
+    const paths = getAllProductIds()
     return {
         paths,
-        fallback: true
+        fallback: 'blocking'
     }
 }
 
