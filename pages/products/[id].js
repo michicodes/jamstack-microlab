@@ -21,18 +21,35 @@ export default function Product({productData}) {
 }
 
 export async function getStaticPaths() {
-    const paths = getAllProductIds()
+    const paths = []
     return {
         paths,
-        fallback: false
+        fallback: true
     }
 }
 
 export async function getStaticProps({params}) {
-    const productData = await getProductData(params.id)
-    return {
-        props: {
-            productData
+    try {
+        const productData = await getProductData(params.id)
+        console.log('products.getStaticProps','static generation',params);
+
+        return {
+            props: {
+                productData
+            }
+        }
+    } catch (e) {
+        console.log('products.getStaticProps','dynamic generation',params);
+
+        return {
+            props: {
+                productData: {
+                    id: params.id,
+                    contentHtml: `This page was generated at ${(new Date()).toISOString()}`,
+                    title: 'Dynamic page',
+                    date: new Date(),
+                }
+            }
         }
     }
 }
